@@ -14,7 +14,6 @@ export function TalentCard({ talent }) {
                         height="100%"
                         src={talent.video}
                         title="Apresentação"
-                        frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                         className="w-full h-full"
