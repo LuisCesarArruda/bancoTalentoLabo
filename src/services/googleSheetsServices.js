@@ -46,10 +46,10 @@ function normalizeTalent(row) {
         nome: row[1] || "",                        // Coluna B
         telefone: row[2] || "",                    // Coluna C
         instagram: formatInstagram(row[3] || ""), // Coluna D
-        genero: cleanGenero(row[4] || ""),        // Coluna E
-        idade: row[5] || "",                       // Coluna F
-        video: formatVideo(row[6] || ""),         // Coluna G
-        email: row[7] || "",                       // Coluna H (Email)
+        genero: cleanGenero(row[5] || ""),        // Coluna E
+        idade: row[6] || "",                       // Coluna F
+        video: formatVideo(row[7] || ""),         // Coluna G
+        email: row[4] || "",                       // Coluna H (Email)
     };
 }
 
@@ -91,36 +91,3 @@ export function getUniqueValues(data, field) {
     return [...new Set(data.map((item) => item[field]).filter(Boolean))].sort();
 }
 
-// Mock de dados para visualização
-export const mockTalents = [
-    {
-        foto: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop',
-        nome: 'Marcus Johnson',
-        telefone: '+55 85 98801-9294',
-        instagram: 'https://instagram.com/marcusjohnson',
-        genero: 'Homem',
-        idade: '28',
-        video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-        email: 'marcus@email.com',
-    },
-    {
-        foto: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop',
-        nome: 'Ana Vitória Almeida',
-        telefone: '+55 85 99999-2222',
-        instagram: 'https://instagram.com/anavitoria.umaso',
-        genero: 'Mulher',
-        idade: '25',
-        video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-        email: 'anavitoria@email.com',
-    },
-    {
-        foto: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop',
-        nome: 'André Campos',
-        telefone: '+55 85 99999-3333',
-        instagram: 'https://instagram.com/andrecamposator',
-        genero: 'Homem',
-        idade: '32',
-        video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-        email: 'andre@email.com',
-    },
-];
