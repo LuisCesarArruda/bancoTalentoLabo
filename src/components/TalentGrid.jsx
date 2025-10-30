@@ -1,4 +1,4 @@
-import { TalentCard } from './talentCard';
+import { TalentCard } from './TalentCard';
 
 export function TalentGrid({ talents }) {
     if (talents.length === 0) {
