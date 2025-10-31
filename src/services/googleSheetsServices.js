@@ -12,13 +12,13 @@ function formatDriveLink(url) {
     // Extrai o ID do Drive
     const match = url.match(/[-\w]{25,}/);
     if (match) {
-        return `https://drive.google.com/thumbnail?id=${match[0]}&sz=w1000`;
+        return `https://drive.google.com/thumbnail?id=${match[0]}&sz=w2000`;
     }
 
     // Se não conseguir extrair, tenta o formato antigo
     if (url.includes("drive.google.com/file/d/")) {
         const id = url.split("/d/")[1]?.split("/")[0];
-        return `https://drive.google.com/thumbnail?id=${id}&sz=w1000`;
+        return `https://drive.google.com/thumbnail?id=${id}&sz=w2000`;
     }
 }
 
