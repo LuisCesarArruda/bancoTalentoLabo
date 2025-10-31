@@ -7,7 +7,7 @@ export function TalentCard({ talent }) {
     return (
         <div className="bg-slate-800 rounded-lg overflow-hidden border border-slate-700 hover:border-red-500/50 transition-all hover:shadow-xl hover:shadow-red-500/10">
             {/* Foto/Video */}
-            <div className="relative h-64 bg-slate-900 flex items-center justify-center overflow-hidden">
+            <div className="relative h-120 bg-slate-900 flex items-center justify-center overflow-hidden">
                 {showVideo && talent.video ? (
                     <iframe
                         width="100%"
