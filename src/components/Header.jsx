@@ -11,7 +11,7 @@ export function Header() {
                         <Users className="text-white" size={24} />
                     </div>
                     <div>
-                        <h1 className="text-2xl font-bold text-white">Banco de Talentos</h1>
+                        <h1 className="text-2xl font-bold text-white">Banco de Elenco</h1>
                         <p className="text-sm text-slate-400">Cinema Unifor - Conecte com profissionais</p>
                     </div>
                 </div>
